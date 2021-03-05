@@ -6,5 +6,6 @@
   "description": "Build of Antlr with NPM compatibility and TypeScript types merged in",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
-  }
+  },
+  "main": "index.js"
 }
