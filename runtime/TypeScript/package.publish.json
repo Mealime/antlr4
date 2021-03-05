@@ -1,0 +1,10 @@
+{
+  "name": "@mealime/antlr4",
+  "version": "4.9.1",
+  "license": "BSD-3-Clause",
+  "repository": "Mealime/antlr4.git",
+  "description": "Build of Antlr with NPM compatibility and TypeScript types merged in",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}

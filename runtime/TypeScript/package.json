@@ -1,0 +1,29 @@
+{
+  "name": "@mealime/antlr4",
+  "version": "4.9.1",
+  "license": "BSD-3-Clause",
+  "repository": "Mealime/antlr4.git",
+  "description": "Build of Antlr with NPM compatibility and TypeScript types merged in",
+  "scripts": {
+    "clean": "rm -rf dist .tmp",
+    "portjs": "rm -rf .tmp && cp -R ../JavaScript/src/antlr4 .tmp && babel .tmp -d dist && rm -rf .tmp",
+    "build": "npm run portjs && cp -R src/* dist && cp -R types/* dist",
+    "publish": "npm run clean && npm run build && cp package.publish.json dist/package.json && cd dist && npm publish"
+  },
+  "files": [
+    "*"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-syntax-class-properties": "^6.13.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "@types/node": "^14.14.31",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {}
+}
